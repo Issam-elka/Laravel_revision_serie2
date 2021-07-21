@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\view1;
+use App\Http\Controllers\view2;
+use App\Http\Controllers\view3;
+use App\Http\Controllers\Exo7;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,13 +20,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('template.main');
 });
-Route::get('/view1', function () {
-    return view('pages.view1');
-})-> name('view1');
-Route::get('/view2', function () {
-    return view('pages.view2');
-})-> name('view2');
-Route::get('/view3', function () {
-    return view('pages.view3');
-})-> name('view3');
+Route::get('/view1',[View1::class, 'index'])-> name('view1');
 
+Route::get('/view2', [View2::class, 'index'])-> name('view2');
+
+Route::get('/view3', [View3::class, 'index'])-> name('view3');
+
+Route::get('/exo7', [Exo7::class, 'index']) -> name('exo7');

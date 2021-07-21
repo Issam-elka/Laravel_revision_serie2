@@ -16,6 +16,7 @@
                 <li> <a class="text-decoration-none text-dark m-5 border-bootom-5" href="{{ route('view1') }}">View1</a></li>
                 <li> <a class="text-decoration-none text-dark m-5 border-bootom-5" href="{{ route('view2') }}">View2</a></li>
                 <li> <a class="text-decoration-none text-dark m-5 border-bootom-5" href="{{ route('view3') }}">View3</a></li>
+                <li> <a class="text-decoration-none text-dark m-5 border-bootom-5" href="{{ route('exo7') }}">Exo7</a></li>
             </ul>
         </div>
         
